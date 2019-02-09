@@ -21,7 +21,7 @@ def buch_daten():
         writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
         for key, val in bücher.items():
             writer.writerow({"Autor": key, "Titel": val}) 
-        #outputFile = open("books.csv", "a", newline="")
+        outputFile = open("books.csv", "a", newline="")
         #fieldnames = [autor, titel]
         #outputWriter = csv.DictWriter(outputFile, fieldnames=fieldnames, delimiter="\t")
         #outputWriter.writerow({autor: autor, titel: titel})
